@@ -68,8 +68,16 @@ const HashtagGenerator = () => {
       // ... (add 150 more words)
     ];
 
-    // Select a random subset of 28 hashtags from the static list
-    const randomHashtags = shuffle(staticHashtags).slice(0, 28);
+    // Extract keywords from the input text
+    const keywords = inputText.toLowerCase().split(/\s+/);
+
+    // Filter hashtags that contain any of the keywords
+    const filteredHashtags = staticHashtags.filter((tag) =>
+      keywords.some((keyword) => tag.toLowerCase().includes(keyword))
+    );
+
+    // Select a random subset of 28 hashtags from the filtered list
+    const randomHashtags = shuffle(filteredHashtags).slice(0, 28);
 
     setHashtags(randomHashtags);
   };
@@ -93,7 +101,7 @@ const HashtagGenerator = () => {
     <div className="hashtag-generator">
       <h1>Social Media Hashtag Generator</h1>
       <textarea
-        placeholder="Enter your word here..."
+        placeholder="Enter your keywords here..."
         value={inputText}
         onChange={(e) => setInputText(e.target.value)}
       />
