@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bibinvc.github.io/hashtag/static/css/main.e0815bf8.css",
+    "main.js": "/bibinvc.github.io/hashtag/static/js/main.866b337e.js",
+    "static/js/787.417ab6ee.chunk.js": "/bibinvc.github.io/hashtag/static/js/787.417ab6ee.chunk.js",
+    "index.html": "/bibinvc.github.io/hashtag/index.html",
+    "main.e0815bf8.css.map": "/bibinvc.github.io/hashtag/static/css/main.e0815bf8.css.map",
+    "main.866b337e.js.map": "/bibinvc.github.io/hashtag/static/js/main.866b337e.js.map",
+    "787.417ab6ee.chunk.js.map": "/bibinvc.github.io/hashtag/static/js/787.417ab6ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0815bf8.css",
+    "static/js/main.866b337e.js"
+  ]
+}
